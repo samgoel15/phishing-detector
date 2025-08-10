@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Welcome | Phishing URL Detector</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="AI-powered phishing URL detector to keep you safe online.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(270deg,
+      #4f8cff,
+      #639dff 25%,
+      #527abf 50%,
+      #3c5db1 75%,
+      #131a40);
+    background-size: 400% 400%;
+    animation: gradientShift 40s ease-in-out infinite;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+  }
+  @keyframes gradientShift {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease forwards 0.6s;
+  }
+  .quote {
+    font-size: 1.35rem;
+    font-style: italic;
+    max-width: 600px;
+    line-height: 1.6;
+    color: #dce8ff;
+    margin: 20px auto 0;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease forwards 1.6s;
+  }
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .btn-main {
+    margin-top: 40px;
+    padding: 14px 40px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(92deg, #63b0ff, #2b5bd9);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 12px rgba(99, 176, 255, 0.4);
+  }
+  .btn-main:hover {
+    background: linear-gradient(92deg, #2b5bd9, #63b0ff);
+    transform: scale(1.07);
+    box-shadow: 0 0 20px rgba(99, 176, 255, 0.8);
+  }
+  footer {
+    position: absolute;
+    bottom: 15px;
+    font-size: 0.92rem;
+    color: #a2b8ff;
+    opacity: 0.85;
+  }
+</style>
+</head>
+<body>
+  <h1>Welcome to Phishing URL Detector</h1>
+  <p class="quote">"Protecting you from the invisible traps of the internet."</p>
+  <!-- KEY PART: link goes to /scan -->
+  <a href="/scan" class="btn-main" aria-label="Start checking URLs now">Start Checking URLs</a>
+  <footer>Powered by AI + Google Safe Browsing</footer>
+</body>
+</html>
